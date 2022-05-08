@@ -1,0 +1,158 @@
+/*===========================
+    20.CONTACT css 
+===========================*/
+
+
+
+.contact-massage-area{
+	& .contact-massage{
+		background: #eef2fb;
+		position: relative;
+		&::before{
+			position: absolute;
+			content: '';
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 37%;
+			background-image: url(../images/contact-bg.jpg);
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			@media #{$md} {
+				width: 0;
+			}
+			@media #{$xs} {
+				width: 0;
+			}
+		}
+		& .contact-massage-item{
+			padding: 71px 30px 80px;
+			@media #{$md} {
+				margin-left: 0;
+			}
+			@media #{$xs} {
+				margin-left: 0;
+			}
+			& form{
+				& .input-box{
+					position: relative;
+					& > i{
+						position: absolute;
+						right: 25px;
+						top: 23px;
+						font-size: 14px;
+						color: $theme-color;
+					}
+					& input{
+						width: 100%;
+						border: 0;
+						padding-left: 25px;
+						line-height: 60px;
+						font-size: 14px;
+						color: #8a8a8a;
+						&::placeholder {
+							opacity: 1;
+						}
+					}
+					& textarea{
+						margin-bottom: 20px;
+						width: 100%;
+						border: 0;
+						padding-left: 25px;
+						height: 120px;
+						resize: none;
+						padding-top: 18px;
+						font-size: 14px;
+						color: #8a8a8a;
+						&::placeholder{
+							opacity: 1;
+						}
+					}
+				}
+				& .input-box{
+					&.item-1{
+						margin-right: -5px;
+						@media #{$md} {
+							margin-right: 0;
+						}
+						@media #{$xs} {
+							margin-right: 0;
+						}
+					}
+					&.item-2{
+						margin-left: -5px;
+						@media #{$md} {
+							margin-left: 0;
+						}
+						@media #{$xs} {
+							margin-left: 0;
+						}
+					}
+				}
+			}
+			& .massage-title{
+				padding-bottom: 38px;
+				& .title{
+					font-size: 30px;
+					font-weight: 600;
+					position: relative;
+					&::before{
+						position: absolute;
+						content: '';
+						left: 0;
+						bottom: -18px;
+						height: 2px;
+						width: 10px;
+						background: $theme-color;
+					}
+					&::after{
+						position: absolute;
+						content: '';
+						left: 18px;
+						bottom: -18px;
+						height: 2px;
+						width: 25px;
+						background: $theme-color;
+					}
+				}
+			}
+		}
+
+
+	}
+}
+
+
+
+.contact-info-area{
+	& .contact-info{
+		background: #02060e;
+		position: relative;
+		margin-bottom: -90px;
+		& .contact-info-item{
+			padding-top: 80px;
+			padding-bottom: 76px;
+			& i{
+				font-size: 40px;
+				color: #f4a700;
+				padding-bottom: 17px;
+			}
+			& ul{
+				& li{
+					font-size: 18px;
+					font-weight: 500;
+					line-height: 28px;
+					color: $white;
+				}
+			}
+		}
+	}
+	& .map{
+		& iframe{
+			width: 100%;
+			height: 650px;
+			margin-bottom: -5px;
+		}
+	}
+}

@@ -1,0 +1,119 @@
+/*===========================
+    15.WHAT WE DO css 
+===========================*/
+
+
+
+
+.what-we-do-area{
+    padding-top: 122px;
+    padding-bottom: 130px;
+    & .section-title{
+        padding-bottom: 10px;
+    }
+    & .what-we-do-item{
+        margin-top: 60px;
+        & i{
+            font-size: 120px;
+            color: $theme-color;
+            line-height: 120px;
+        }
+        & .title{
+            font-size: 24px;
+            padding-top: 30px;
+        }
+        & p{
+            font-size: 15px;
+            padding: 13px 40px 17px;
+            @media #{$lg} {
+                padding: 13px 10px 17px;
+            }
+            @media #{$md} {
+                padding: 13px 30px 17px;
+            }
+            @media #{$xs} {
+                padding: 13px 10px 17px;
+            }
+        }
+        & a{
+            font-size: 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $body-color;
+            position: relative;
+            &::before{
+                position: absolute;
+                content: '';
+                left: 0;
+                bottom: -2px;
+                width: 100%;
+                height: 2px;
+                background: $body-color;
+            }
+        }
+    }
+}
+
+.what-we-do-2-area{
+    background: #f4f7fe;
+    padding-top: 121px;
+    padding-bottom: 130px;
+    & .services-box{
+        background: $white;
+        box-shadow: 0px 10px 60px 0px rgba(165, 178, 255, 0.33);
+        padding: 0px 30px 30px 30px;
+        margin-top: 30px;
+        & .services-item{
+            & .services-thumb{
+                overflow: hidden;
+                & img{
+                    width: 100%;
+                    transform: scale(1);
+                    @include transition(0.3s);
+                }
+            }
+            &:hover{
+                & .services-thumb{
+                    & img{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            & .services-content{
+                padding-top: 35px;
+                & .title{
+                    font-size: 24px;
+                }
+                & p{
+                    padding: 11px 20px;
+                    font-size: 15px;
+                    @media #{$xs} {
+                        padding: 11px 0; 
+                    }
+                }
+                & a{
+                    font-size: 15px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: $body-color;
+                    position: relative;
+                    &::before{
+                        position: absolute;
+                        content: '';
+                        left: 0;
+                        bottom: -2px;
+                        height: 2px;
+                        width: 100%;
+                        background: $body-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,270 @@
+/*===========================
+    7.GALLERY css 
+===========================*/
+
+
+
+.gallery-area {
+    padding-top: 122px;
+    padding-bottom: 130px;
+    position: relative;
+    z-index: 10;
+
+    & .gallery-item {
+        @media #{$md} {
+            margin-top: 30px;
+        }
+
+        @media #{$xs} {
+            margin-top: 30px;
+        }
+
+        & .gallery-thumb {
+            overflow: hidden;
+            & img {
+                width: 100%;
+                transform: scale(1);
+                @include transition(0.3s);
+            }
+        }
+
+        & .gallery-content {
+            padding-left: 22px;
+            position: relative;
+            margin-top: 35px;
+
+            &::before {
+                position: absolute;
+                content: '';
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 100%;
+                width: 4px;
+                background: $theme-color;
+            }
+
+            & .title {
+                font-size: 24px;
+                padding-bottom: 2px;
+
+                @media #{$lg} {
+                    font-size: 22px;
+                }
+
+                @media #{$xs} {
+                    font-size: 20px;
+                }
+            }
+
+            & span {
+                font-weight: 600;
+                color: $theme-color;
+                text-transform: uppercase;
+
+                @media #{$xs} {
+                    font-size: 15px;
+                }
+            }
+
+            & a {
+                position: absolute;
+                right: 5px;
+                top: 50%;
+                transform: translateY(-50%);
+                border: 2px solid $theme-color;
+                height: 45px;
+                width: 45px;
+                text-align: center;
+                line-height: 43px;
+                color: $theme-color;
+                border-radius: 50%;
+                @include transition(0.3s);
+
+                &:hover {
+                    background: $theme-color;
+                    color: $white;
+                }
+            }
+        }
+        &:hover{
+            & .gallery-thumb{
+                & img{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    & .shape-1 {
+        position: absolute;
+        left: 225px;
+        bottom: 140px;
+        z-index: -1;
+
+        @media #{$md} {
+            left: 30px;
+        }
+
+        @media #{$xs} {
+            display: none;
+        }
+    }
+
+    & .shape-2 {
+        position: absolute;
+        right: 155px;
+        top: 125px;
+        z-index: -1;
+
+        @media #{$md} {
+            right: 30px;
+        }
+
+        @media #{$xs} {
+            display: none;
+        }
+    }
+
+    &.gallery-3-area {
+        & .section-title {
+            & span {
+                margin-left: 65px;
+
+                &::after {
+                    display: none;
+                }
+            }
+        }
+
+        & .gallery-box {
+            position: relative;
+            overflow: hidden;
+            &:hover{
+                & img{
+                    transform: scale(1.1);
+                }
+            }
+            & img{
+                width: 100%;
+                transform: scale(1);
+                @include transition(0.3s);
+            }
+
+            & .gallery-overlay {
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+
+                & .item {
+                    padding-bottom: 37px;
+
+                    & .title {
+                        font-size: 24px;
+                        color: $white;
+                        @media #{$xs} {
+                            font-size: 20px;
+                        }
+                    }
+
+                    & span {
+                        color: $white;
+                        font-weight: 600;
+                        padding-top: 8px;
+                    }
+                }
+            }
+        }
+
+        & .gallery-active {
+            & .slick-arrow {
+                position: absolute;
+                top: -110px;
+                z-index: 9;
+                cursor: pointer;
+                height: 60px;
+                width: 60px;
+                text-align: center;
+                line-height: 60px;
+                font-size: 18px;
+                color: $black;
+                border-radius: 50%;
+                background-image: -moz-linear-gradient(-49deg, rgb(108, 190, 3) 0%, rgb(176, 179, 2) 60%, rgb(244, 167, 0) 100%);
+                background-image: -webkit-linear-gradient(-49deg, rgb(108, 190, 3) 0%, rgb(176, 179, 2) 60%, rgb(244, 167, 0) 100%);
+                background-image: -ms-linear-gradient(-49deg, rgb(108, 190, 3) 0%, rgb(176, 179, 2) 60%, rgb(244, 167, 0) 100%);
+                z-index: 10;
+                cursor: pointer;
+                @include transition(0.3s);
+                &::before{
+                    background: #eef2fb;
+                    position: absolute;
+                    content: '';
+                    height: 100%;
+                    width: 100%;
+                    left: 0;
+                    top: 0;
+                    border-radius: 50%;
+                    z-index: -1;
+                    opacity: 1;
+                    @include transition(0.3s);
+                }
+                &:hover{
+                    color: $white;
+                    &::before{
+                        opacity: 0;
+                    }
+                }
+
+                &.prev {
+                    right: 85px;
+                }
+
+                &.next {
+                    right: 15px;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+.gallery-page-area{
+    padding-top: 123px;
+    & .project-menu{
+        padding-bottom: 13px;
+        & ul{
+            & li{
+                display: inline-block;
+                cursor: pointer;
+                font-size: 18px;
+                font-weight: 600;
+                color: $black;
+                font-family: $poppins;
+                margin: 0 14px;
+                @media #{$xs} {
+                    font-size: 14px;
+                    margin: 0 5px;
+                }
+                @media #{$sm} {
+                    font-size: 16px;
+                    margin: 0 5px;
+                }
+                &.active{
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+    & .gallery-item{
+        & img{
+            width: 100%;
+        }
+    }
+}
+
+

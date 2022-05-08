@@ -1,0 +1,124 @@
+/*===========================
+    16.COUNTDOWN css 
+===========================*/
+
+
+
+
+.countdown-area{
+    height: 900px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    position: relative;
+    @media #{$xs} {
+        height: auto;
+    }
+    & .countdown-thumb{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        @media #{$md} {
+            display: none;
+        }
+        @media #{$xs} {
+            display: none;
+        }
+        & img{
+            width: 80%;
+            @media #{$lg} {
+                width: 60%;
+            }
+        }
+    }
+    & .countdown-content{
+        margin-left: 40px;
+        @media #{$xs} {
+            margin-left: 0;
+        }
+        & .title{
+            font-size: 50px;
+            @media #{$lg} {
+                font-size: 40px;
+            }
+        }
+        & h4{
+            font-size: 30px;
+            padding-top: 29px;
+            padding-bottom: 8px;
+        }
+        & > span{
+            font-size: 16px;
+            font-weight: 600;
+            color: #bebebe;
+            font-family: $poppins;
+            & span{
+                font-weight: 700;
+                color: $theme-color;
+                font-size: 24px;
+                padding-left: 10px;
+            }
+        }
+        & ul{
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 35px;
+            @media #{$xs} {
+                display: block;
+            }
+            @media #{$sm} {
+                display: flex;
+            }
+            & li{
+                height: 110px;
+                width: 110px;
+                background: $theme-color;
+                padding-left: 21px;
+                padding-top: 14px;
+                position: relative;
+                z-index: 10;
+                @media #{$xs} {
+                    margin-bottom: 30px;
+                }
+                @media #{$sm} {
+                    margin-bottom: 0px;
+                }
+                &::before{
+                    position: absolute;
+                    content: '';
+                    left: -5px;
+                    top: -5px;
+                    height: 100%;
+                    width: 100%;
+                    background: $white;
+                    z-index: -1;
+                }
+                & p{
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: $black;
+                    text-transform: uppercase;
+                }
+                & span{
+                    font-size: 50px;
+                    font-weight: 700;
+                    font-family: $poppins;
+                    color: $theme-color;
+                    line-height: 50px;
+                    margin-top: -1px;
+                }
+            }
+        }
+        & a{
+            margin-top: 50px;
+        }
+    }
+}

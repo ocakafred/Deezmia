@@ -1,0 +1,65 @@
+/*===========================
+    18.PROJECT css 
+===========================*/
+
+
+
+.project-details-area{
+    padding-bottom: 126px;
+    & .project-details-thumb{
+        & img{
+            width: 100%;
+        }
+    }
+    & .project-box{
+        & .project-content{
+            & .title{
+                font-size: 50px;
+                line-height: 55px;
+                padding-bottom: 34px;
+                @media #{$xs} {
+                    font-size: 28px;
+                    line-height: 34px;
+                }
+            }
+            & p{
+                font-size: 15px;
+                &.text {
+                    padding-top: 26px;
+                    padding-bottom: 41px;
+                }
+            }
+        }
+        & .project-content-2{
+            & .title{
+                font-size: 35px;
+                line-height: 55px;
+                padding-top: 44px;
+                padding-bottom: 12px;
+                @media #{$xs} {
+                    font-size: 28px;
+                }
+            }
+            & p{
+                font-size: 15px;
+            }
+        }
+    }
+    & .project-sidebar-box{
+        border: 1px solid  #e5e5e5;
+        padding: 20px 40px;
+        & .item{
+            padding: 15px 0;
+            & span{
+                font-weight: 600;
+                color: #8a8a8a;
+            }
+            & p{
+                font-size: 24px;
+                color: $black;
+                font-weight: 600;
+            }
+        }
+    }
+
+}

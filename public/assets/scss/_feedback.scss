@@ -1,0 +1,466 @@
+/*===========================
+    8.FEEDBACK css 
+===========================*/
+
+
+
+.feedback-area {
+    padding-bottom: 227px;
+    padding-top: 122px;
+    background: #02060e;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url(../images/store-pattern.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    & .section-title {
+        padding-bottom: 57px;
+
+        & .title {
+            color: $white;
+        }
+    }
+
+    & .feedback-content {
+        .feedback-user {
+            text-align: center;
+            margin-top: 14px;
+
+            @media #{$xs} {
+                text-align: left;
+            }
+
+            & i {
+                font-size: 50px;
+                color: $theme-color;
+                padding-top: 33px;
+                padding-right: 45px;
+            }
+
+            & img {
+                display: block;
+            }
+        }
+
+        & p {
+            font-size: 35px;
+            line-height: 52px;
+            color: #b9c7e1;
+            margin-left: -21px;
+            padding-right: 30px;
+
+            @media #{$lg} {
+                font-size: 28px;
+                line-height: 44px;
+            }
+
+            @media #{$md} {
+                font-size: 23px;
+                line-height: 40px;
+                padding-right: 0;
+                margin-left: 0;
+            }
+
+            @media #{$xs} {
+                font-size: 21px;
+                line-height: 40px;
+                padding-right: 0;
+                margin-left: 0;
+            }
+        }
+    }
+
+    & .feedback-active {
+        & .slick-arrow {
+            position: absolute;
+            right: 0;
+            transform: translateY(-50%);
+            z-index: 9;
+            cursor: pointer;
+            height: 60px;
+            width: 60px;
+            border: 3px solid #34466a;
+            color: #34466a;
+            text-align: center;
+            line-height: 56px;
+            border-radius: 50%;
+            @include transition(0.3s);
+
+            &:hover {
+                background: $theme-color;
+                border-color: $theme-color;
+                color: $white;
+            }
+
+            &.prev {
+                top: 40%;
+            }
+
+            &.next {
+                top: 70%;
+            }
+        }
+
+        & .slick-dots {
+            position: absolute;
+            left: 50%;
+            bottom: -98px;
+            transform: translateX(-50%);
+
+            & li {
+                display: inline-block;
+
+                & button {
+                    font-size: 0;
+                    background-color: transparent;
+                    border: 3px solid #4b5f88;
+                    border-radius: 50%;
+                    height: 20px;
+                    width: 20px;
+                    margin: 0 7px;
+                }
+
+                &.slick-active {
+                    & button {
+                        border-color: $theme-color;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+
+.feedback-title-area {
+    background: #02060e;
+    position: relative;
+    margin-top: 116px;
+    padding-top: 122px;
+    padding-bottom: 570px;
+
+    &::before {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url(../images/store-pattern.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    & .section-title {
+        padding-bottom: 55px;
+    }
+
+
+    & .feedback-item {
+        background: $white;
+        padding: 24px 35px 15px;
+        box-shadow: 0px 0px 59.4px 0.6px rgba(2, 6, 14, 0.1);
+        margin-top: 30px;
+
+        @media #{$lg} {
+            padding: 24px 20px 15px;
+        }
+
+        @media #{$xs} {
+            padding: 24px 15px 15px;
+        }
+
+        @media #{$sm} {
+            padding: 24px 35px 15px;
+        }
+
+        & .feedback-info {
+            padding-left: 105px;
+            position: relative;
+
+            & img {
+                position: absolute;
+                left: 0;
+                top: -50px;
+                box-shadow: 0px 0px 59.4px 0.6px rgba(2, 6, 14, 0.2);
+                overflow: hidden;
+                border-radius: 0px 8px 8px 8px;
+            }
+
+            & .title {
+                font-size: 18px;
+            }
+
+            & span {
+                font-size: 14px;
+                font-weight: 600;
+                color: $theme-color;
+            }
+        }
+
+        & p {
+            font-size: 15px;
+            padding-top: 20px;
+        }
+
+        & .feedback-review {
+            & ul {
+                & li {
+                    display: inline-block;
+                    font-size: 18px;
+                    color: #f4a700;
+                    margin-right: 2px;
+                }
+
+                &.quote {
+                    & li {
+                        margin-right: 0;
+                        font-size: 50px;
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+
+    }
+
+    & .feedback-2-active {
+        & .slick-arrow {
+            position: absolute;
+
+            top: 50%;
+            transform: translateY(-50%);
+            height: 60px;
+            width: 60px;
+            text-align: center;
+            line-height: 60px;
+            background: $white;
+            color: $theme-color;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 9;
+            font-size: 18px;
+
+            &.prev {
+                left: -55px;
+            }
+
+            &.next {
+                right: -55px;
+            }
+        }
+
+        & .slick-dots {
+            position: absolute;
+            left: 50%;
+            bottom: -98px;
+            transform: translateX(-50%);
+
+            & li {
+                display: inline-block;
+
+                & button {
+                    font-size: 0;
+                    border: 3px solid #4b5f88;
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 50%;
+                    background: transparent;
+                    margin: 0 7px;
+                }
+
+                &.slick-active {
+                    & button {
+                        border-color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.feedback-play-area {
+    margin-bottom: 122px;
+
+    & .feedback-play {
+        margin-top: -343px;
+        position: relative;
+        z-index: 99;
+
+        &::before {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-image: -moz-linear-gradient(-49deg, rgba(108, 190, 3, 0.8) 0%, rgba(176, 179, 2, 0.77) 60%, rgba(229, 170, 0, 0.75) 91%, rgba(244, 167, 0, 0.70196) 100%);
+            background-image: -webkit-linear-gradient(-49deg, rgba(108, 190, 3, 0.8) 0%, rgba(176, 179, 2, 0.77) 60%, rgba(229, 170, 0, 0.75) 91%, rgba(244, 167, 0, 0.70196) 100%);
+            background-image: -ms-linear-gradient(-49deg, rgba(108, 190, 3, 0.8) 0%, rgba(176, 179, 2, 0.77) 60%, rgba(229, 170, 0, 0.75) 91%, rgba(244, 167, 0, 0.70196) 100%);
+
+        }
+
+        & a {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            height: 135px;
+            width: 135px;
+            background: $white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 135px;
+            font-size: 24px;
+            color: $theme-color;
+
+            @media #{$xs} {
+                height: 80px;
+                width: 80px;
+                line-height: 80px;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+
+
+
+.feedback-3-area {
+    background: $theme-color;
+    position: relative;
+    padding-bottom: 227px;
+    margin-bottom: 121px;
+
+    &::before {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url(../images/store-pattern.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &::after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 32%;
+        background-image: url(../images/feedback-thumb.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        @media #{$md} {
+            width: 0;
+        }
+        @media #{$xs} {
+            width: 0;
+        }
+    }
+
+    & .feedback-content {
+        margin-top: 30px;
+
+        & .info {
+            position: relative;
+            padding-left: 100px;
+
+            & .title {
+                color: $white;
+                font-size: 26px;
+            }
+
+            & span {
+                color: $white;
+                font-weight: 600;
+                padding-top: 2px;
+            }
+
+            & img {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        & p {
+            font-size: 24px;
+            line-height: 32px;
+            font-family: $poppins;
+            color: $white;
+            padding-top: 34px;
+            padding-bottom: 33px;
+            @media #{$lg} {
+                font-size: 19px;
+            }
+            @media #{$md} {
+                font-size: 22px;
+            }
+            @media #{$xs} {
+                font-size: 17px;
+            }
+            @media #{$sm} {
+                font-size: 24px;
+            }
+        }
+
+        & ul {
+            & li {
+                display: inline-block;
+
+                & i {
+                    color: $white;
+                    margin-right: 1px;
+                }
+            }
+        }
+    }
+
+    & .feedback-3-active {
+        & .slick-dots {
+            position: absolute;
+            left: 17px;
+            bottom: -98px;
+
+            & li {
+                display: inline-block;
+
+                & button {
+                    font-size: 0;
+                    border: 3px solid $white;
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 50%;
+                    background: transparent;
+                    margin-right: 15px;
+                }
+
+                &.slick-active {
+                    & button {
+                        border-color: #f4a700;
+                    }
+                }
+            }
+        }
+    }
+}

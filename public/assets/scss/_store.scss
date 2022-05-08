@@ -1,0 +1,259 @@
+/*===========================
+    9.STORE css 
+===========================*/
+
+
+
+.store-area{
+    background: $theme-color;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url(../images/store-pattern.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    & .store-content{
+        @media #{$md} {
+            margin-bottom: 30px;
+        }
+        @media #{$xs} {
+            margin-bottom: 30px;
+        }
+        & span{
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: capitalize;
+            color: $white;
+            padding-left: 65px;
+            position: relative;
+            &::before{
+                position: absolute;
+                content: '';
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 3px;
+                width: 45px;
+                background: $white;
+            }
+        }
+        & .title{
+            font-size: 50px;
+            line-height: 55px;
+            color: $white;
+            letter-spacing: -1px;
+            padding-top: 25px;
+            padding-bottom: 21px;
+            @media #{$lg} {
+                font-size: 40px;
+                line-height: 46px;
+            }
+        }
+        & p{
+            color: $white;
+            padding-right: 5px;
+            @media #{$lg} {
+                font-size: 15px;
+            }
+        }
+    }
+    & .store-item{
+        padding-top: 50px;
+        border-radius: 15px;
+        & img{
+            display: inline-block;
+        }
+        & .store-title{
+            padding: 44px 35px 8px;
+            & .title{
+                font-size: 24px;
+                @media #{$lg} {
+                    font-size: 20px;
+                }
+                @media #{$xs} {
+                    font-size: 20px;
+                }
+                @media #{$sm} {
+                    font-size: 24px;
+                }
+            }
+            & span{
+                font-size: 14px;
+                color: #989898;
+                & i{
+                    color: #f4a700;
+                    padding-right: 5px;
+                }
+            }
+        }
+        & .store-price{
+            padding-left: 35px;
+            padding-right: 35px;
+            padding-bottom: 45px;
+            & p{
+                font-size: 18px;
+                font-weight: 700;
+                color: #fe2000;
+            }
+            & ul{
+                & li{
+                    display: inline-block;
+                    & i{
+                        color: #f4a700;
+                        font-size: 14px;
+                        padding-left: 4px;
+                    }
+                }
+            }
+        }
+    }
+    & .store-active{
+        & .slick-arrow{
+            position: absolute;
+            bottom: 29px;
+            z-index: 9;
+            cursor: pointer;
+            height: 60px;
+            width: 60px;
+            text-align: center;
+            line-height: 54px;
+            border: 3px solid $white;
+            border-radius: 50%;
+            color: $white;
+            font-size: 18px;
+            @include transition(0.3s);
+            @media #{$lg} {
+                bottom: 35px;
+            }
+            &:hover{
+                background: $white;
+                color: $theme-color;
+            }
+            &.prev{
+                left: -385px;
+                @media #{$lg} {
+                    left: -310px;
+                }
+            }
+            &.next{
+                left: -315px;
+                @media #{$lg} {
+                    left: -230px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.store-2-area{
+    background: $theme-color;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url(../images/store-pattern.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    & .section-title{
+        & .title{
+            padding: 25px 10px 0;
+        }
+    }
+    & .store-item{
+        padding-top: 30px;
+        border-radius: 15px;
+        position: relative;
+        z-index: 10;
+        &::before{
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background: #ff583d;
+            z-index: -2;
+            @include transition(0.3s);
+            border-radius: 15px;
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background: #fff;
+            z-index: -1;
+            border-radius: 15px;
+        }
+        & img{
+            display: inline-block;
+        }
+        & .store-title{
+            padding: 44px 35px 8px;
+            & .title{
+                font-size: 24px;
+                @media #{$lg} {
+                    font-size: 20px;
+                }
+                @media #{$xs} {
+                    font-size: 20px;
+                }
+                @media #{$sm} {
+                    font-size: 24px;
+                }
+            }
+            & span{
+                font-size: 14px;
+                color: #989898;
+                & i{
+                    color: #f4a700;
+                    padding-right: 5px;
+                }
+            }
+        }
+        & .store-price{
+            padding-left: 35px;
+            padding-right: 35px;
+            padding-bottom: 45px;
+            & p{
+                font-size: 18px;
+                font-weight: 700;
+                color: #fe2000;
+            }
+            & ul{
+                & li{
+                    display: inline-block;
+                    & i{
+                        color: #f4a700;
+                        font-size: 14px;
+                        padding-left: 4px;
+                    }
+                }
+            }
+        }
+        &:hover{
+            &::before{
+                transform: rotate(-6deg);
+                left: -14px;
+            }
+        }
+    }
+}
