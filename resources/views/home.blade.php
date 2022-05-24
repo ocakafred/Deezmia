@@ -6,13 +6,13 @@
     <!--====== BANNER PART START ======-->
 
     <section class="banner-area">
-        <div class="banner-item bg_cover" style="background-image: url(assets/images/banner-bg.jpg)">
+        <div class="banner-item bg_cover" style="background-image: url('/assets/images/banner1.jpg')">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-9">
                         <div class="banner-content">
-                            <span data-animation="fadeInLeft" data-delay="0.2s">Food Is The Main Elements To Build Heath</span>
-                            <h1 data-animation="fadeInLeft" data-delay="0.5s" class="title">Build Health With Foods</h1>
+                            <span data-animation="fadeInLeft" data-delay="0.2s">We encourage community involvement through good skilful</span>
+                            <h1 data-animation="fadeInLeft" data-delay="0.5s" class="title"> agricultural practices</h1>
                             <p data-animation="fadeInLeft" data-delay="0.8s">Since 1990s We Provide Best Food For World Wide</p>
                             <ul data-animation="fadeInUp" data-delay="1.2s">
                                 <li><a href="#" class="main-btn">see our farm <i class="far fa-plus"></i></a></li>
@@ -23,7 +23,31 @@
                 </div>
             </div>
         </div>
-        <div class="banner-item bg_cover" style="background-image: url(assets/images/banner-bg-2.jpg)">
+
+
+
+        <div class="banner-item bg_cover" style="background-image: url('/assets/images/banner3.jpg')">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="banner-content">
+                            <span data-animation="fadeInLeft" data-delay="0.2s">We encourage community involvement through good skilful</span>
+                            <h1 data-animation="fadeInLeft" data-delay="0.5s" class="title"> agricultural practices</h1>
+                            <p data-animation="fadeInLeft" data-delay="0.8s">Since 1990s We Provide Best Food For World Wide</p>
+                            <ul data-animation="fadeInUp" data-delay="1.2s">
+                                <li><a href="#" class="main-btn">see our farm <i class="far fa-plus"></i></a></li>
+                                <li><a href="#" class="main-btn main-btn-2">our services <i class="far fa-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="banner-item bg_cover" style="background-image: url('/assets/images/banner2.jpg')">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-9">
@@ -54,7 +78,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="features-thumb">
-                        <img src="assets/images/features-thumb.jpg" alt="features">
+                        <img src="{{url('/assets/images/hm_img.jpg')}}" alt="features">
                     </div>
                 </div>
                 <div class="col-lg-6">
