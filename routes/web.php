@@ -14,9 +14,10 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', [HomeController::class,'home']);
-
-
+Route::get('/', [HomeController::class,'home'])->name('home');
+Route::get('/about-us', [HomeController::class,'about'])->name('about');
+Route::get('/services', [HomeController::class,'services'])->name('services');
+Route::get('/contact', [HomeController::class,'contact'])->name('contact');
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });

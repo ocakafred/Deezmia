@@ -13,34 +13,37 @@
     <title>Deezmia - Agro Import and Export Limited- Uganda</title>
 
     <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/png">
+    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico')}}" type="image/png">
 
     <!--====== Bootstrap css ======-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css')}}">
 
     <!--====== Fontawesome css ======-->
-    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/all.css')}}">
 
     <!--====== flaticon css ======-->
-    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/flaticon.css')}}">
 
     <!--====== Line Icons css ======-->
-    <link rel="stylesheet" href="assets/css/LineIcons.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/LineIcons.css')}}">
 
     <!--====== animate css ======-->
-    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/animate.min.css')}}">
 
     <!--====== Magnific Popup css ======-->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css')}}">
 
     <!--====== Slick css ======-->
-    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/slick.css')}}">
 
     <!--====== Default css ======-->
-    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/default.css')}}">
 
     <!--====== Style css ======-->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css')}}">
+
+      <!--====== Style css ======-->
+      <link rel="stylesheet" href="{{ asset('assets/css/custom.css')}}">
 
 
 </head>
@@ -101,8 +104,8 @@
                             </span>
                         </button>
                         <h2 class="modal-title" id="myModalLabel2">
-                            <a href="index.html">
-                                {{-- <img src="assets/images/logo-2.png" alt="Logo"> --}}
+                            <a href="{{ route('home')}}">
+                                {{-- <img src="{{ asset('assets/images/logo-2.png" alt="Logo"> --}}
                                 Deezmia
                             </a>
                         </h2>
@@ -220,7 +223,7 @@
                         <div class="header-info-item">
                             <div class="logo">
                                 <a href="">
-                                    {{-- <img src="assets/images/logo.png" alt="logo"> --}}
+                                    {{-- <img src="{{ asset('assets/images/logo.png" alt="logo"> --}}
                                     <h1 style="color:bisque">Deezmia</h1> 
                                 </a>
                                 
@@ -246,20 +249,20 @@
                                 {{-- <ul class="flag-wrap">
                                     <li class="flag-item-top">
                                         <a href="#" class="flag-bar d-flex align-items-center">
-                                            <img src="assets/images/flag.png" alt="Image">
+                                            <img src="{{ asset('assets/images/flag.png" alt="Image">
                                             <span>Eng <i class="far fa-angle-down"></i></span>
                                         </a>
                                         <ul class="flag-item-bottom">
                                             <li class="flag-item">
                                                 <a href="#" class="flag-link">
-                                                    <img src="assets/images/flag-1.png" alt="Image">
+                                                    <img src="{{ asset('assets/images/flag-1.png" alt="Image">
                                                     United Kingdom 
                                                 </a>
                                             </li>
                                         
                                             <li class="flag-item">
                                                 <a href="#" class="flag-link">
-                                                    <img src="assets/images/flag-6.png" alt="Image">
+                                                    <img src="{{ asset('assets/images/flag-6.png" alt="Image">
                                                     New Zealand
                                                 </a>
                                             </li>
@@ -287,13 +290,13 @@
                                     <ul class="navbar-nav mr-auto">
                                         
                                         <li class="nav-item active">
-                                            <a class="page-scroll" href="">Home</a>
+                                            <a class="page-scroll" href="{{ route('home')}}">Home</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="page-scroll" href="about-us.html">About Us</a>
+                                            <a class="page-scroll" href="{{ route('about')}}">About Us</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="page-scroll" href="#">Services</a>
+                                            <a class="page-scroll" href="{{ route('services')}}">Services</a>
                                             <ul class="sub-menu">
                                                 <li><a href="our-project.html">Project</a></li>
                                                 <li><a href="project-details.html">Project details</a></li>
@@ -304,7 +307,7 @@
                                         
                                    
                                         <li class="nav-item">
-                                            <a class="page-scroll" href="">Contact</a>
+                                            <a class="page-scroll" href="{{ route('contact')}}">Contact</a>
                                         </li>
                                     </ul>
                                 </div>

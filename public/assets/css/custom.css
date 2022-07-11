@@ -1,0 +1,16 @@
+.page-title-area{
+    height: 100px;
+}
+.page-title-area .page-title-content .title{
+    font-size: 40px;
+}
+.page-title-area .page-title-content nav .breadcrumb li{
+    font-size: 19px;
+}
+
+
+.farmers-item 
+.farmers-overlay{
+height: 270px;
+    width: 300px;
+}
