@@ -89,32 +89,32 @@
                             <div class="col-lg-6">
                                 <div class="features-box text-center mt-30">
                                     <i class="flaticon-pumpkin"></i>
-                                    <h5 class="title">Organic Food</h5>
-                                    <p>Sedut perspi ciatis undmn see iste natus error sit volupta</p>
-                                    <a href="#">read more</a>
+                                    <h5 class="title">Cropping</h5>
+                                    <p>We deal in organic crops with quality being one of our main values. The main crops  we plant seasonally include  Beans, Maize, Soya Beans, Rice,   and Cassava</p>
+                                    {{-- <a href="#">read more</a> --}}
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="features-box text-center mt-30">
                                     <i class="flaticon-rice"></i>
-                                    <h5 class="title">Safe & Trusty</h5>
-                                    <p>Sedut perspi ciatis undmn see iste natus error sit volupta</p>
-                                    <a href="#">read more</a>
+                                    <h5 class="title">Fish Farming</h5>
+                                    <p>At Deezmia, we produce high quality organic fish using sustainable and environmentally friendly methods. We hatchery department which include fingerlings. </p>
+                                    {{-- <a href="#">read more</a> --}}
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="features-box text-center mt-30">
                                     <i class="flaticon-agriculture-1"></i>
-                                    <h5 class="title">agricultural</h5>
-                                    <p>Sedut perspi ciatis undmn see iste natus error sit volupta</p>
-                                    <a href="#">read more</a>
+                                    <h5 class="title">Piggery</h5>
+                                    <p>We have high quality breed of pigs to serve   the market needs.</p>
+                                    {{-- <a href="#">read more</a> --}}
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="features-counter-area">
+            {{-- <div class="features-counter-area">
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="features-counter mt-30">
@@ -145,7 +145,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </section>
 
@@ -153,7 +153,7 @@
 
     <!--====== SERVICES PART START ======-->
 
-    <section class="services-area pb-130">
+    {{-- <section class="services-area pb-130">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-md-10">
@@ -275,23 +275,23 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <!--====== STORE PART ENDS ======-->
 
     <!--====== GALLERY PART START ======-->
 
-    <section class="gallery-area">
-        <div class="container">
-            <div class="row justify-content-center">
+    {{-- <section class="gallery-area">
+        <div class="container"> --}}
+            {{-- <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-8">
                     <div class="section-title text-center">
                         <span>Our Gallery</span>
                         <h3 class="title">Our Latest Product To Build Health</h3>
                     </div>
                 </div>
-            </div>
-            <div class="row justify-content-center">
+            </div> --}}
+            {{-- <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-6">
                     <div class="gallery-item mt-30">
                         <div class="gallery-thumb">
@@ -328,28 +328,28 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
+            </div> --}}
+            {{-- <div class="row">
                 <div class="col-lg-12">
                     <div class="gallery-btn text-center mt-80">
                         <a class="main-btn" href="#">see more gallery <i class="far fa-plus"></i></a>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="shape-1">
+            </div> --}}
+        {{-- </div> --}}
+        {{-- <div class="shape-1">
             <img src="assets/images/shape/shape-1.png" alt="">
         </div>
         <div class="shape-2">
             <img src="assets/images/shape/shape-2.png" alt="">
-        </div>
-    </section>
+        </div> --}}
+    {{-- </section> --}}
 
     <!--====== GALLERY PART ENDS ======-->
 
     <!--====== FEEDBACK PART START ======-->
 
-    <section class="feedback-area">
+    {{-- <section class="feedback-area">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-9">
@@ -405,13 +405,13 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <!--====== FEEDBACK PART ENDS ======-->
 
     <!--====== FAQ PART START ======-->
 
-    <section class="faq-area">
+    {{-- <section class="faq-area">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-lg-5 col-md-7">
@@ -515,12 +515,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <!--====== FAQ PART ENDS ======-->
     
     <!--====== BLOG PART START ======-->
-    
+{{--     
     <section class="blog-area">
         <div class="container">
             <div class="row justify-content-center">
@@ -561,13 +561,13 @@
         <div class="shape-2">
             <img src="assets/images/shape/shape-4.png" alt="">
         </div>
-    </section>
+    </section> --}}
 
     <!--====== BLOG PART ENDS ======-->
 
     <!--====== FARMS PART START ======-->
     
-    <section class="farms-area d-flex align-items-center bg_cover" style="background-image: url(assets/images/farms.jpg)">
+    {{-- <section class="farms-area d-flex align-items-center bg_cover" style="background-image: url(assets/images/farms.jpg)">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7">
@@ -579,12 +579,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <!--====== FARMS PART ENDS ======-->
     
     <!--====== SPONSOR PART START ======-->
-    
+{{--     
     <section class="sponsor-area pt-130 pb-130">
         <div class="container">
             <div class="row">
@@ -619,7 +619,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <!--====== SPONSOR PART ENDS ======-->
     

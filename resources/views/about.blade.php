@@ -16,9 +16,42 @@
                 <div class="col-lg-6">
                     <div class="about-info-content">
                         <span>About Us</span>
-                        <h3 class="title">We Are Best For Your Foods Partners</h3>
-                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney Col-lege in Virginia, looked up one of the more obscure Latin words, consecte-tur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
-                        <p class="text">Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum </p>
+                        <h3 class="title">We Are Best For Agro Partners</h3>
+                      
+
+                    <h6>Background </h6>.
+                    <p>The farm was birthed during Covid in 2020 through prayer;  we decided as a couple that we needed a retirement plan especially after the Pandemic affected all streams of income. 
+                    The farm was purchased in June 2020; then registered as a business a year later in June 2021. The Farm is called Deemzia Agro import and Export Limited. 
+                    The rationale for Deemzia Agro Limited is to be a commercially viable and sustainable farming enterprise with emphasis on farming and  fisheries. Furthermore, its medium to long term goal is to ensure that these sustainable practices are transplanted, via learnings, to the community at large and more specifically, upcoming agricultural scholars.
+                    </p>
+
+                   <h6> Mission</h6>
+                   <p>
+                        To encourage community involvement through good skilful agricultural practices
+                   </p>
+
+                    <h6>Vision</h6>
+                    <p>
+                        To put in place sustainable and good agricultural and animal husbandry practices in Deemzia Agro Limited with the ultimate aim of being a commercially sustainable agricultural venture that, not only provides high quality produce, but is also a source of learnings for the community at large.
+                    </p>
+
+                <h6>Core Values</h6>
+                <ol class="list-unstyled"> 
+                    <li>Innovation - Using technology to work smarter, faster and more efficiently.</li>
+                    <li>Creativity-coming up with new ideas on how to maximise available resources.</li>
+                    <li>Sustainability- Good agricultural practices with a green foot print for future generations to come.</li>
+                    <li>Fairness - A mutually beneficial and respectful work environment regardless of gender, background or race.</li>
+                    <li>Hard work- Your work will provide for your needs;you will be happy and prosperous.
+                        (Psalm 128:2)
+                                        </li>
+                </ol> 
+
+
+
+
+
+        </p>
+                       
                         <div class="info">
                            
                         </div>
@@ -33,13 +66,13 @@
     
     <!--====== FARMERS PART START ======-->
 
-    <section class="farmers-area">
+    {{-- <section class="farmers-area">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-8">
                     <div class="section-title text-center">
                         <span>Porfolio</span>
-                        <h3 class="title">Meet Our Honorable Hard Workers</h3>
+                        <h3 class="title">Our Gallery</h3>
                     </div>
                 </div>
             </div>
@@ -96,7 +129,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <!--====== FARMERS PART ENDS ======-->
     

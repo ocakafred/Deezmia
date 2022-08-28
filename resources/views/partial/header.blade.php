@@ -209,7 +209,7 @@
                                     <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                                     <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
                                 </ul> --}}
-                                <a href="#">singin <i class="far fa-plus"></i></a>
+                                {{-- <a href="#">singin <i class="far fa-plus"></i></a> --}}
                             </div>
                         </div>
                     </div>
@@ -296,6 +296,9 @@
                                             <a class="page-scroll" href="{{ route('about')}}">About Us</a>
                                         </li>
                                         <li class="nav-item">
+                                            <a class="page-scroll" href="{{ route('services')}}">Things We Do</a>
+                                        </li>
+                                        {{-- <li class="nav-item">
                                             <a class="page-scroll" href="{{ route('services')}}">Services</a>
                                             <ul class="sub-menu">
                                                 <li><a href="our-project.html">Project</a></li>
@@ -304,7 +307,7 @@
                                                 <li><a href="our-gallery.html">Gallery</a></li>
                                             </ul>
                                         </li>
-                                        
+                                         --}}
                                    
                                         <li class="nav-item">
                                             <a class="page-scroll" href="{{ route('contact')}}">Contact</a>
