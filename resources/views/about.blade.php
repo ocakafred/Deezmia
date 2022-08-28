@@ -10,7 +10,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="about-info-thumb ml-30 mr-30">
-                        <img src="{{ asset('assets/images/img/07.jpeg')}}" alt="about">
+                        <img src="{{ asset('assets/images/img/11.jpeg')}}" alt="about">
                     </div>
                 </div>
                 <div class="col-lg-6">

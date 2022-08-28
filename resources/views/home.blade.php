@@ -11,12 +11,14 @@
                 <div class="row">
                     <div class="col-lg-9">
                         <div class="banner-content">
-                            <span data-animation="fadeInLeft" data-delay="0.2s">We encourage community involvement through good skilful</span>
-                            <h1 data-animation="fadeInLeft" data-delay="0.5s" class="title"> agricultural practices</h1>
-                            <p data-animation="fadeInLeft" data-delay="0.8s">Since 1990s We Provide Best Food For World Wide</p>
+                            <span data-animation="fadeInLeft" data-delay="0.2s">We encourage community involvement through good skilful agricultural practices.
+                                
+                            </span>
+                            <h1 data-animation="fadeInLeft" data-delay="0.5s" class="title"> Crop Farming</h1>
+                            <p data-animation="fadeInLeft" data-delay="0.8s"></p>
                             <ul data-animation="fadeInUp" data-delay="1.2s">
-                                <li><a href="#" class="main-btn">see our farm <i class="far fa-plus"></i></a></li>
-                                <li><a href="#" class="main-btn main-btn-2">our services <i class="far fa-plus"></i></a></li>
+                                <li><a href="{{ route('contact')}}" class="main-btn">Contact Us <i class="far fa-plus"></i></a></li>
+                                <li><a href="{{ route('services')}}" class="main-btn main-btn-2">our services <i class="far fa-plus"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -31,12 +33,12 @@
                 <div class="row">
                     <div class="col-lg-9">
                         <div class="banner-content">
-                            <span data-animation="fadeInLeft" data-delay="0.2s">We encourage community involvement through good skilful</span>
-                            <h1 data-animation="fadeInLeft" data-delay="0.5s" class="title"> agricultural practices</h1>
-                            <p data-animation="fadeInLeft" data-delay="0.8s">Since 1990s We Provide Best Food For World Wide</p>
+                            <span data-animation="fadeInLeft" data-delay="0.2s">We produce high quality organic fish using sustainable and environmentally friendly methods.</span>
+                            <h1 data-animation="fadeInLeft" data-delay="0.5s" class="title"> Fish Farming</h1>
+                            {{-- <p data-animation="fadeInLeft" data-delay="0.8s">Since 1990s We Provide Best Food For World Wide</p> --}}
                             <ul data-animation="fadeInUp" data-delay="1.2s">
-                                <li><a href="#" class="main-btn">see our farm <i class="far fa-plus"></i></a></li>
-                                <li><a href="#" class="main-btn main-btn-2">our services <i class="far fa-plus"></i></a></li>
+                                <li><a href="{{ route('contact')}}" class="main-btn">Contact Us <i class="far fa-plus"></i></a></li>
+                                <li><a href="{{ route('services')}}" class="main-btn main-btn-2">our services <i class="far fa-plus"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -52,12 +54,12 @@
                 <div class="row">
                     <div class="col-lg-9">
                         <div class="banner-content">
-                            <span data-animation="fadeInLeft" data-delay="0.2s">Food Is The Main Elements To Build Heath</span>
-                            <h1 data-animation="fadeInLeft" data-delay="0.5s" class="title">Build Health With Foods</h1>
-                            <p data-animation="fadeInLeft" data-delay="0.8s">Since 1990s We Provide Best Food For World Wide</p>
+                            <span data-animation="fadeInLeft" data-delay="0.2s">We have high quality breed of pigs to serve   the market needs.</span>
+                            <h1 data-animation="fadeInLeft" data-delay="0.5s" class="title">Piggery</h1>
+                            {{-- <p data-animation="fadeInLeft" data-delay="0.8s">Since 1990s We Provide Best Food For World Wide</p> --}}
                             <ul data-animation="fadeInUp" data-delay="1.2s">
-                                <li><a href="#" class="main-btn">see our farm <i class="far fa-plus"></i></a></li>
-                                <li><a href="#" class="main-btn main-btn-2">our services <i class="far fa-plus"></i></a></li>
+                                <li><a href="{{ route('contact')}}" class="main-btn">Contact Us <i class="far fa-plus"></i></a></li>
+                                <li><a href="{{ route('services')}}" class="main-btn main-btn-2">our services <i class="far fa-plus"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -78,7 +80,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="features-thumb">
-                        <img src="{{url('/assets/images/hm_img.jpg')}}" alt="features">
+                        <img src="{{url('/assets/images/img/06.jpeg')}}" alt="features">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -282,16 +284,16 @@
     <!--====== GALLERY PART START ======-->
 
     {{-- <section class="gallery-area">
-        <div class="container"> --}}
-            {{-- <div class="row justify-content-center">
+        <div class="container"> 
+            <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-8">
                     <div class="section-title text-center">
                         <span>Our Gallery</span>
                         <h3 class="title">Our Latest Product To Build Health</h3>
                     </div>
                 </div>
-            </div> --}}
-            {{-- <div class="row justify-content-center">
+            </div>
+            <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-6">
                     <div class="gallery-item mt-30">
                         <div class="gallery-thumb">
@@ -328,22 +330,22 @@
                         </div>
                     </div>
                 </div>
-            </div> --}}
-            {{-- <div class="row">
+            </div>
+            <div class="row">
                 <div class="col-lg-12">
                     <div class="gallery-btn text-center mt-80">
                         <a class="main-btn" href="#">see more gallery <i class="far fa-plus"></i></a>
                     </div>
                 </div>
-            </div> --}}
-        {{-- </div> --}}
-        {{-- <div class="shape-1">
+            </div> 
+        </div> 
+        <div class="shape-1">
             <img src="assets/images/shape/shape-1.png" alt="">
         </div>
         <div class="shape-2">
             <img src="assets/images/shape/shape-2.png" alt="">
-        </div> --}}
-    {{-- </section> --}}
+        </div> 
+    </section> --}}
 
     <!--====== GALLERY PART ENDS ======-->
 
@@ -622,6 +624,70 @@
     </section> --}}
 
     <!--====== SPONSOR PART ENDS ======-->
+
+
+    <!--====== GALLERY PART START ======-->
+
+    <section class="gallery-area gallery-3-area">
+        <div class="container">
+            <div class="row justify-content-start">
+                <div class="col-lg-6 col-md-8 col-sm-9">
+                    <div class="section-title text-left">
+                        <span>Our Gallery</span>
+                        <h3 class="title">Our Latest Products</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row gallery-active">
+                <div class="col-lg-4">
+                    <div class="gallery-box mt-30">
+                        <img src="{{ asset('assets/images/img/11.jpeg')}}" alt="gallery">
+                        <div class="gallery-overlay d-flex justify-content-center align-items-end">
+                            <div class="item text-center">
+                                <h5 class="title">Crop Farming</h5>
+                                <span> Organic Crop</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="gallery-box mt-30">
+                        <img src="{{ asset('assets/images/banner3.jpg')}}" alt="gallery">
+                        <div class="gallery-overlay d-flex justify-content-center align-items-end">
+                            <div class="item text-center">
+                                <h5 class="title">Fish Farming</h5>
+                                <span> Fingerlings</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="gallery-box mt-30">
+                        <img src="{{ asset('assets/images/banner2.jpg')}}" alt="gallery">
+                        <div class="gallery-overlay d-flex justify-content-center align-items-end">
+                            <div class="item text-center">
+                                <h5 class="title">Piggery</h5>
+                                <span>Quality breed </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="gallery-box mt-30">
+                        <img src="{{ asset('assets/images/banner1.jpg')}}" alt="gallery">
+                        <div class="gallery-overlay d-flex justify-content-center align-items-end">
+                            <div class="item text-center">
+                                <h5 class="title">Cropping</h5>
+                                <span>Organic </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== GALLERY PART ENDS ======-->
     
     <!--====== QUESTIONS PART START ======-->
     

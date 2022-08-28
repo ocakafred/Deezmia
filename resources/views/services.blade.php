@@ -204,51 +204,51 @@
                 <div class="col-lg-6 col-md-8 col-sm-9">
                     <div class="section-title text-left">
                         <span>Our Gallery</span>
-                        <h3 class="title">Our Latest Product To Build Health</h3>
+                        <h3 class="title">Our Latest Products</h3>
                     </div>
                 </div>
             </div>
             <div class="row gallery-active">
                 <div class="col-lg-4">
                     <div class="gallery-box mt-30">
-                        <img src="assets/images/gallery-4.jpg" alt="gallery">
+                        <img src="{{ asset('assets/images/img/11.jpeg')}}" alt="gallery">
                         <div class="gallery-overlay d-flex justify-content-center align-items-end">
                             <div class="item text-center">
-                                <h5 class="title">Natural Vegetable</h5>
-                                <span>Vegetables Organic</span>
+                                <h5 class="title">Crop Farming</h5>
+                                <span> Organic Crop</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="gallery-box mt-30">
-                        <img src="assets/images/gallery-5.jpg" alt="gallery">
+                        <img src="{{ asset('assets/images/banner3.jpg')}}" alt="gallery">
                         <div class="gallery-overlay d-flex justify-content-center align-items-end">
                             <div class="item text-center">
-                                <h5 class="title">Food Health Check</h5>
-                                <span>Food Medical</span>
+                                <h5 class="title">Fish Farming</h5>
+                                <span> Fingerlings</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="gallery-box mt-30">
-                        <img src="assets/images/gallery-6.jpg" alt="gallery">
+                        <img src="{{ asset('assets/images/banner2.jpg')}}" alt="gallery">
                         <div class="gallery-overlay d-flex justify-content-center align-items-end">
                             <div class="item text-center">
-                                <h5 class="title">Organic Fresh Food</h5>
-                                <span>Vegetables Organic</span>
+                                <h5 class="title">Piggery</h5>
+                                <span>Quality breed </span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="gallery-box mt-30">
-                        <img src="assets/images/gallery-5.jpg" alt="gallery">
+                        <img src="{{ asset('assets/images/banner1.jpg')}}" alt="gallery">
                         <div class="gallery-overlay d-flex justify-content-center align-items-end">
                             <div class="item text-center">
-                                <h5 class="title">Food Health Check</h5>
-                                <span>Food Medical</span>
+                                <h5 class="title">Cropping</h5>
+                                <span>Organic </span>
                             </div>
                         </div>
                     </div>
