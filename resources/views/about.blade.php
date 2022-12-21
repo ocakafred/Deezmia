@@ -2,7 +2,7 @@
 @section('content')
 @include('partial.title')
 
-   
+
     <!--====== ABOUT INFO PART START ======-->
     
     <section class="about-info-area pt-130 pb-130">
@@ -10,16 +10,17 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="about-info-thumb ml-30 mr-30">
-                        <img src="{{ asset('assets/images/img/11.jpeg')}}" alt="about">
+                        <img src="{{ asset('storage/'.$page->image)}}" alt="about">
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="about-info-content">
-                        <span>About Us</span>
+                        <span>{{$page->title }}</span>
                         <h3 class="title">We Are Best For Agro Partners</h3>
-                      
+                
+                      {!! $page->body !!}
 
-                    <h6>Background </h6>.
+                    {{-- <h6>Background </h6>.
                     <p>The farm was birthed during Covid in 2020 through prayer;  we decided as a couple that we needed a retirement plan especially after the Pandemic affected all streams of income. 
                     The farm was purchased in June 2020; then registered as a business a year later in June 2021. The Farm is called Deemzia Agro import and Export Limited. 
                     The rationale for Deemzia Agro Limited is to be a commercially viable and sustainable farming enterprise with emphasis on farming and  fisheries. Furthermore, its medium to long term goal is to ensure that these sustainable practices are transplanted, via learnings, to the community at large and more specifically, upcoming agricultural scholars.
@@ -50,7 +51,7 @@
 
 
 
-        </p>
+        </p> --}}
                        
                         <div class="info">
                            

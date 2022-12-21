@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Post;
+use App\Models\Page;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -17,8 +19,11 @@ class HomeController extends Controller
      */
     public function about()
     {
+      
+        $page= Page::find(3);
         return view('about',[
-            'title' => 'About us'
+            'title' => $page->title,
+            'page' => $page,
         ]);
     }
     /**
