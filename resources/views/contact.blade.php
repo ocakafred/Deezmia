@@ -60,8 +60,9 @@
     <!--====== CONTACT MASSAGE PART ENDS ======-->
 
     <!--====== CONTACT INFO PART START ======-->
+    {!! $page->body !!}
     
-    <div class="contact-info-area">
+    {{-- <div class="contact-info-area">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -103,7 +104,7 @@
         <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d510078.3578440853!2d31.59017728437845!3d2.8198768979459365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1771c46832a393d7%3A0xc94d69318489d9a0!2sOtwee%20Public%20School!5e0!3m2!1sen!2sug!4v1661675559167!5m2!1sen!2sug" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
         </div>
-    </div>
+    </div> --}}
 
     <!--====== CONTACT INFO PART ENDS ======-->
 @endsection

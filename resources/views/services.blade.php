@@ -88,70 +88,22 @@
     
     <!--====== WHAT WE DO PART START ======-->
 
-    <section class="what-we-do-area">
+    {!! $page->body !!}
+    {{-- <section class="what-we-do-area">
         <div class="container position-relative">
             <div class="row justify-content-center">
                 <div class="col-lg-7 col-md-8">
                     <div class="section-title text-center">
-                        <span>What We Do</span>
-                        <h3 class="title">Explore what we do</h3>
+                        <span>{!! $page->title !!}</span>
+                        <h3 class="title">Explore what we do</h3> -
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6 col-sm-8">
-                    <div class="what-we-do-item text-center mt-30">
-                        {{-- <i class="flaticon-salad"></i> --}}
-                        <h4 class="title">Cropping</h4>
-                        <p> We deal in organic crops with quality being one of our main values. The main crops  we plant seasonally include  Beans, Maize, Soya Beans, Rice,   and Cassava</p>
-                        {{-- <a href="#">read more</a> --}}
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-8">
-                    <div class="what-we-do-item text-center mt-30">
-                        {{-- <i class="fi fi-rs-user"></i> --}}
-                        <h4 class="title">Fish Farming</h4>
-                        <p>At Deezmia, we produce high quality organic fish using sustainable and environmentally friendly methods. We hatchery department which include fingerlings. </p>
-                        {{-- <a href="#">read more</a> --}}
-                    </div>
-                </div>
-                {{-- <div class="col-lg-4 col-md-6 col-sm-8">
-                    <div class="what-we-do-item text-center mt-30">
-                        <i class="flaticon-sprout"></i>
-                        <h4 class="title">Plan Designing</h4>
-                        <p>But I must explain to you how all this mistaken idea denouncing pleasure and praising pain was born give</p> --}}
-                        {{-- <a href="#">read more</a> --}}
-                    {{-- </div>
-                </div> --}}
-                <div class="col-lg-4 col-md-6 col-sm-8">
-                    <div class="what-we-do-item text-center mt-30">
-                        {{-- <i class="flaticon-lemon"></i> --}}
-                        <h4 class="title">Piggery</h4>
-                        <p>We have high quality breed of pigs to serve   the market needs. 
-                            We are constantly pushing to expand our operations to meet the growing nutritional
-                             needs of our people </p>
-                        {{-- <a href="#">read more</a> --}}
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-8">
-                    <div class="what-we-do-item text-center mt-30">
-                        {{-- <i class="flaticon-mushroom"></i> --}}
-                        <h4 class="title">Forestry( Cashew) </h4>
-                        <p>We have invested heavily in Cashew nut farming.  Please contact us for more details.</p>
-                        {{-- <a href="#">read more</a> --}}
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-8">
-                    <div class="what-we-do-item text-center mt-30">
-                        {{-- <i class="flaticon-food-1"></i> --}}
-                        <h4 class="title">Apiary </h4>
-                        <p>Our  key focus to produce high quality and affordable  honey both national and international market</p>
-                        {{-- <a href="#">read more</a> --}}
-                    </div>
-                </div>
+                
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <!--====== WHAT WE DO PART ENDS ======-->
     

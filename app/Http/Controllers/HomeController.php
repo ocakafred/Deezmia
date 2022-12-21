@@ -31,8 +31,10 @@ class HomeController extends Controller
      */
     public function services()
     {
+        $page= Page::find(4);
         return view('services',[
-            'title' => 'Services'
+            'title' => $page->title,
+            'page' => $page,
         ]);
     }
     /**
@@ -40,8 +42,10 @@ class HomeController extends Controller
      */
     public function contact()
     {
+        $page= Page::find(5);
         return view('contact',[
-            'title' => 'Contact us'
+            'title' => 'Contact us',
+            'page' => $page
         ]);
     }
     
