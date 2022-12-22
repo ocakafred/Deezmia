@@ -6,15 +6,16 @@
     <!--====== BANNER PART START ======-->
 
     <section class="banner-area">
-        <div class="banner-item bg_cover" style="background-image: url('/assets/images/banner1.jpg')">
+        @foreach ($sliders as $slider)
+        <div class="banner-item bg_cover" style="background-image: url(storage/{{$slider->image}})">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-9">
                         <div class="banner-content">
-                            <span data-animation="fadeInLeft" data-delay="0.2s">We encourage community involvement through good skilful agricultural practices.
+                            <span data-animation="fadeInLeft" data-delay="0.2s"> {!! $slider->body !!}
                                 
                             </span>
-                            <h1 data-animation="fadeInLeft" data-delay="0.5s" class="title"> Crop Farming</h1>
+                            <h1 data-animation="fadeInLeft" data-delay="0.5s" class="title"> {{ $slider->title }}</h1>
                             <p data-animation="fadeInLeft" data-delay="0.8s"></p>
                             <ul data-animation="fadeInUp" data-delay="1.2s">
                                 <li><a href="{{ route('contact')}}" class="main-btn">Contact Us <i class="far fa-plus"></i></a></li>
@@ -25,47 +26,8 @@
                 </div>
             </div>
         </div>
+        @endforeach
 
-
-
-        <div class="banner-item bg_cover" style="background-image: url('/assets/images/banner3.jpg')">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-9">
-                        <div class="banner-content">
-                            <span data-animation="fadeInLeft" data-delay="0.2s">We produce high quality organic fish using sustainable and environmentally friendly methods.</span>
-                            <h1 data-animation="fadeInLeft" data-delay="0.5s" class="title"> Fish Farming</h1>
-                            {{-- <p data-animation="fadeInLeft" data-delay="0.8s">Since 1990s We Provide Best Food For World Wide</p> --}}
-                            <ul data-animation="fadeInUp" data-delay="1.2s">
-                                <li><a href="{{ route('contact')}}" class="main-btn">Contact Us <i class="far fa-plus"></i></a></li>
-                                <li><a href="{{ route('services')}}" class="main-btn main-btn-2">our services <i class="far fa-plus"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-        <div class="banner-item bg_cover" style="background-image: url('/assets/images/banner2.jpg')">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-9">
-                        <div class="banner-content">
-                            <span data-animation="fadeInLeft" data-delay="0.2s">We have high quality breed of pigs to serve   the market needs.</span>
-                            <h1 data-animation="fadeInLeft" data-delay="0.5s" class="title">Piggery</h1>
-                            {{-- <p data-animation="fadeInLeft" data-delay="0.8s">Since 1990s We Provide Best Food For World Wide</p> --}}
-                            <ul data-animation="fadeInUp" data-delay="1.2s">
-                                <li><a href="{{ route('contact')}}" class="main-btn">Contact Us <i class="far fa-plus"></i></a></li>
-                                <li><a href="{{ route('services')}}" class="main-btn main-btn-2">our services <i class="far fa-plus"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
 
     <!--====== BANNER PART ENDS ======-->
@@ -80,41 +42,11 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="features-thumb">
-                        <img src="{{url('/assets/images/img/06.jpeg')}}" alt="features">
+                        <img src="{{url('storage/'.$home->image)}}" alt="features">
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="features-content">
-                        <span>Our Features</span>
-                        <h3 class="title">We Are Best For Your Foods Partners</h3>
-                        <div class="row features-active">
-                            <div class="col-lg-6">
-                                <div class="features-box text-center mt-30">
-                                    <i class="flaticon-pumpkin"></i>
-                                    <h5 class="title">Cropping</h5>
-                                    <p>We deal in organic crops with quality being one of our main values. The main crops  we plant seasonally include  Beans, Maize, Soya Beans, Rice,   and Cassava</p>
-                                    {{-- <a href="#">read more</a> --}}
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="features-box text-center mt-30">
-                                    <i class="flaticon-rice"></i>
-                                    <h5 class="title">Fish Farming</h5>
-                                    <p>At Deezmia, we produce high quality organic fish using sustainable and environmentally friendly methods. We hatchery department which include fingerlings. </p>
-                                    {{-- <a href="#">read more</a> --}}
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="features-box text-center mt-30">
-                                    <i class="flaticon-agriculture-1"></i>
-                                    <h5 class="title">Piggery</h5>
-                                    <p>We have high quality breed of pigs to serve   the market needs.</p>
-                                    {{-- <a href="#">read more</a> --}}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+               {!! $home->body !!}
             </div>
             {{-- <div class="features-counter-area">
                 <div class="row">

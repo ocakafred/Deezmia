@@ -14,8 +14,14 @@ class HomeController extends Controller
     public function home()
     {
         $posts = Post::where('category_id','=',3)->get();
+        $sliders = Post::where('category_id','=',2)->get();
+        $home = Page::find(6);
+        $header_contact = Post::find(12);
         return view('home',[
             'posts' => $posts,
+            'sliders' => $sliders,
+            'home' => $home,
+            'header_contact' => $header_contact,
         ]);
     }
     /**
@@ -24,10 +30,12 @@ class HomeController extends Controller
     public function about()
     {
       
+        $header_contact = Post::find(12);
         $page= Page::find(3);
         return view('about',[
             'title' => $page->title,
             'page' => $page,
+            'header_contact' => $header_contact,
         ]);
     }
     /**
@@ -36,11 +44,13 @@ class HomeController extends Controller
     public function services()
     {
         $page= Page::find(4);
+        $header_contact = Post::find(12);
         $posts = Post::where('category_id','=',3)->get();
         return view('services',[
             'title' => $page->title,
             'page' => $page,
-            'posts' => $posts
+            'posts' => $posts,
+            'header_contact' => $header_contact,
         ]);
     }
     /**
@@ -49,9 +59,11 @@ class HomeController extends Controller
     public function contact()
     {
         $page= Page::find(5);
+        $header_contact = Post::find(12);
         return view('contact',[
             'title' => 'Contact us',
-            'page' => $page
+            'page' => $page,
+            'header_contact' => $header_contact,
         ]);
     }
     

@@ -229,21 +229,7 @@
                                 
                             </div>
                             <div class="header-info d-lg-flex d-none">
-                                <div class="item">
-                                    <i class="fal fa-phone"></i>
-                                    <span>Phone Number</span>
-                                    <a href="tel:+12345678999">
-                                        <h5 class="title">+256-781-444470</h5>
-                                    </a>
-                                </div>
-                                <div class="item">
-                                    <i class="fal fa-envelope-open"></i>
-                                    <span>Email Address</span>
-                                    <a href="mailto:deezmiaagrofarms2021@gmail.com">
-                                        <h5 class="title">deezmiaagrofarms2021@gmail.com</h5>
-                                    </a>
-
-                                </div>
+                                {!! $header_contact->body !!}
                             </div>
                             <div class="header-flag d-none d-sm-block">
                                 {{-- <ul class="flag-wrap">
