@@ -634,23 +634,27 @@
                 <div class="col-lg-6 col-md-8 col-sm-9">
                     <div class="section-title text-left">
                         <span>Our Gallery</span>
-                        <h3 class="title">Our Latest Products</h3>
+                        <h3 class="title">Our  Products</h3>
                     </div>
                 </div>
             </div>
             <div class="row gallery-active">
+                @foreach ($posts as $post)
+                    
+             
                 <div class="col-lg-4">
                     <div class="gallery-box mt-30">
-                        <img src="{{ asset('assets/images/img/11.jpeg')}}" alt="gallery">
+                        <img src="{{ asset('storage/'.$post->image)}}" alt="gallery">
                         <div class="gallery-overlay d-flex justify-content-center align-items-end">
                             <div class="item text-center">
-                                <h5 class="title">Crop Farming</h5>
-                                <span> Organic Crop</span>
+                                <h5 class="title">{{ $post->title}}</h5>
+                                <span> {{ $post->excerpt}}</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                @endforeach
+                {{-- <div class="col-lg-4">
                     <div class="gallery-box mt-30">
                         <img src="{{ asset('assets/images/banner3.jpg')}}" alt="gallery">
                         <div class="gallery-overlay d-flex justify-content-center align-items-end">
@@ -682,7 +686,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
+
             </div>
         </div>
     </section>

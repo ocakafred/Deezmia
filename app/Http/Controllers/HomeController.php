@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use App\Models\Page;
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -12,7 +13,10 @@ class HomeController extends Controller
 
     public function home()
     {
-        return view('home');
+        $posts = Post::where('category_id','=',3)->get();
+        return view('home',[
+            'posts' => $posts,
+        ]);
     }
     /**
      * About us
@@ -32,9 +36,11 @@ class HomeController extends Controller
     public function services()
     {
         $page= Page::find(4);
+        $posts = Post::where('category_id','=',3)->get();
         return view('services',[
             'title' => $page->title,
             'page' => $page,
+            'posts' => $posts
         ]);
     }
     /**
