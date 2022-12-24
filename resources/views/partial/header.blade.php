@@ -113,7 +113,7 @@
                     <div class="modal-body">
                         <div class="sidebar-modal-widget">
                             <h3 class="title">About Us</h3>
-                            <p>The rationale for Deemzia Agro Limited is to be a commercially viable and sustainable farming enterprise with emphasis on farming and  fisheries. Furthermore, its medium to long term goal is to ensure that these sustainable practices are transplanted, via learnings, to the community at large and more specifically, upcoming agricultural scholars.</p>
+                            <p>{!!  \Str::limit($about_page->body,500) !!}</p>
                         </div>
                         <div class="sidebar-modal-widget">
                             {{-- <h3 class="title">Additional Links</h3>
@@ -138,19 +138,20 @@
                                 <li>
                                     <i class="far fa-map-marker-alt"></i>
                                     Address
-                                    <span>Lujoro Village, Amuru District, Uganda</span>
+                                    <span>{{ $header_contact->excerpt}}</span>
            
                                 </li>
                                 <li>
-                                    <i class="far fa-envelope"></i>
+                                    {{-- <i class="far fa-envelope"></i>
                                     Email
-                                    <span>deezmiaagrofarms2021@gmail.com</span>
+                                    <span>deezmiaagrofarms2021@gmail.com</span> --}}
+                                    {!! $header_contact->body !!}
                                 </li>
-                                <li>
+                                {{-- <li>
                                     <i class="far fa-phone"></i>
                                     Phone
                                     <span>+256-781-444470</span>
-                                </li>
+                                </li> --}}
                             </ul>
                         </div>
                         {{-- <div class="sidebar-modal-widget"> --}}
@@ -302,7 +303,7 @@
                                 </div>
                                 <div class="navbar-btns">
                                     <ul>
-                                        <li><a class="search-box" href="#"><i class="fal fa-search"></i></a></li>
+                                        {{-- <li><a class="search-box" href="#"><i class="fal fa-search"></i></a></li> --}}
                                         <li><a class="d-none d-lg-inline" href="#myModal2" data-toggle="modal"><i class="fal fa-bars"></i></a></li>
                                     </ul>
                                 </div>

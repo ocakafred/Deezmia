@@ -10,15 +10,15 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="about-info-thumb ml-30 mr-30">
-                        <img src="{{ asset('storage/'.$page->image)}}" alt="about">
+                        <img src="{{ asset('storage/'.$about_page->image)}}" alt="about">
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="about-info-content">
-                        <span>{{$page->title }}</span>
+                        <span>{{$about_page->title }}</span>
                         <h3 class="title">We Are Best For Agro Partners</h3>
                 
-                      {!! $page->body !!}
+                      {!! $about_page->body !!}
 
                     {{-- <h6>Background </h6>.
                     <p>The farm was birthed during Covid in 2020 through prayer;  we decided as a couple that we needed a retirement plan especially after the Pandemic affected all streams of income. 

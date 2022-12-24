@@ -19,9 +19,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="footer-content">
                         <h4 class="title">About Company</h4>
-                        <p>Deemzia Agro Limited is a commercially viable and 
-                            sustainable farming enterprise with emphasis on farming and  fisheries. 
-                            </p>
+                        {!!  \Str::limit($about_page->body,200) !!}
                         <ul>
                             {{-- <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -49,7 +47,7 @@
                         <ul>
                             <li><a href="{{ route('services')}}"><i class="far fa-long-arrow-right"></i> Cropping</a></li>
                             <li><a href="{{ route('services')}}"><i class="far fa-long-arrow-right"></i> Fish Farming</a></li>
-                            <li><a href="{{ route('services')}}""><i class="far fa-long-arrow-right"></i> Piggery</a></li>
+                            <li><a href="{{ route('services')}}"><i class="far fa-long-arrow-right"></i> Piggery</a></li>
                             <li><a href="{{ route('services')}}"><i class="far fa-long-arrow-right"></i> Forestry</a></li>
                             <li><a href="{{ route('services')}}"><i class="far fa-long-arrow-right"></i> Apiary</a></li>
                             {{-- <li><a href="#"><i class="far fa-long-arrow-right"></i> Online Enquiry</a></li> --}}
@@ -60,8 +58,9 @@
                     <div class="footer-info mt-30">
                         <h3 class="title">Contact Us</h3>
                         <ul>
-                            <li><a href="mailto:deezmiaagrofarms2021@gmail.com"><i class="fal fa-envelope-open-text"></i> deezmiaagrofarms2021@gmail.com</a></li>
-                            <li><a href="#"><i class="far fa-map-marker-alt"></i> Lujoro Village, Amuru District, Uganda</a></li>
+                            <li>{!! $header_contact->body !!}</li>
+                            {{-- <li><a href="mailto:deezmiaagrofarms2021@gmail.com"><i class="fal fa-envelope-open-text"></i> deezmiaagrofarms2021@gmail.com</a></li> --}}
+                            {{-- <li><a href="#"><i class="far fa-map-marker-alt"></i> Lujoro Village, Amuru District, Uganda</a></li> --}}
                         </ul>
                     </div>
                 </div>
